@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+/* html {
+    font-size: 10px;
+} */
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.column {
+    margin: 0 15px;
+    width: 270px;
+}
+
+header li,
+.copyright li {
+    display: inline-block;
+}
+
+.bg-tablet {
+    position: relative;
+    height: 540px;
+    padding: 170px 70px;
+    box-sizing: border-box;
+    background: url(../img/bg-tablet1.jpg) right top;
+}
+
+.bg-macbook {
+    position: relative;
+    height: 540px;
+    padding: 145px 70px;
+    box-sizing: border-box;
+    background: url(../img/bg-macbook.jpg) right top;
+}

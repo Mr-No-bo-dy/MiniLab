@@ -1,6 +1,6 @@
-* {
+/* * {
     margin: 0;
-}
+} */
 
 /* html {
     font-size: 10px;
@@ -24,6 +24,11 @@ a {
     max-width: 1170px;
 }
 
+.wrapper-wide {
+    margin: 0 auto;
+    max-width: 1410px;
+}
+
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -40,8 +45,40 @@ header li,
     display: inline-block;
 }
 
-.bg-tablet {
+/* table {
+    width: 16%;
+} */
+
+.flex {
+    display: none;
+}
+
+.list:hover>.flex {
+    display: flex;
+}
+
+.in-list li {
+    display: block;
+}
+
+.tablet {
     position: relative;
+}
+
+.arrow-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #131313;
+}
+
+.arrow-right:hover~.bg-tablet {
+    background: url(../img/bg-tablet2.jpg) right top;
+}
+
+.bg-tablet {
     height: 540px;
     padding: 170px 70px;
     box-sizing: border-box;

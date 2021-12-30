@@ -11,30 +11,80 @@
 
 <body>
     <header>
-        <nav class="flex-between">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Surface</a></li>
-                <li><a href="#">Xbox</a></li>
-                <li><a href="#">Підтримка</a></li>
-                <li><a href="#">Додатково</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <p>Пошук на сайті</p>
-                </li>
-                <li><a href="#"></a></li>
-                <li><a href="#">Вхід</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper-wide">
+            <nav class="flex-between">
+                <ul>
+                    <li><a href="index.html"><picture>
+                        <source srcset="img/logo.webp" type="image/webp">
+                        <img src="img/logo.png" alt="logo">
+                       </picture></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Surface</a></li>
+                    <li><a href="#">Xbox</a></li>
+                    <li><a href="#">Підтримка</a></li>
+                    <li class="list"><a href="#">Додатково</a>
+                            <div class="flex">
+                                <ul class="in-list">
+                                    <li><a href="#">Прогрпмне забезпечення</a></li>
+                                    <li><a href="#">Програми для ОС</a></li>
+                                    <li><a href="#">Skype</a></li>
+                                    <li><a href="#">Notepad++</a></li>
+                                </ul>
+                                <ul class="in-list">
+                                    <li><a href="#">Комп’ютери та пристрої</a></li>
+                                    <li><a href="#">Планшети </a></li>
+                                    <li><a href="#">Аксесуари та інше</a></li>
+                                </ul>
+                                <ul class="in-list">
+                                    <li><a href="#">Розваги</a></li>
+                                    <li><a href="#">Ігри</a></li>
+                                    <li><a href="#">Ігри для ПК</a></li>
+                                </ul>
+                                <ul class="in-list">
+                                    <li><a href="#">Бізнес</a></li>
+                                    <li><a href="#">Реклама</a></li>
+                                    <li><a href="#">Корпоративні рішення</a></li>
+                                </ul>
+                                <ul class="in-list">
+                                    <li><a href="#">DevTools & IT</a></li>
+                                    <li><a href="#">Sublime Text 3</a></li>
+                                    <li><a href="#">Розробка програм для Android</a></li>
+                                    <li><a href="#">Документи</a></li>
+                                </ul>
+                                <ul class="in-list">
+                                    <li><a href="#">Інше</a></li>
+                                    <li><a href="#">Наш магазин</a></li>
+                                    <li><a href="#">Безкоштовні завантаження</a></li>
+                                    <li><a href="#">Освіта</a></li>
+                                </ul>
+                            </div>
+                            <!-- <p><a href="#">Переглянути все</a></p> -->
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Пошук на сайті</p>
+                    </li>
+                    <li><a href="#"><picture>
+                        <source srcset="img/cart.webp" type="image/webp">
+                        <img src="img/cart.png" alt="logo">
+                       </picture></a></li>
+                    <li><a href="#">Вхід</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="wrapper">
-            <div class="bg-tablet">
-                <h2>Цікавий планшет</h2>
-                <p>Розкрий потенціал свого пристрою разом з нами всього за 250 грн/міс.</p>
-                <a class="cta" href="#">придбати пристрій</a>
-                <div class="dots"></div>
+            <div class="tablet">
+                <div class="arrow-right"></div>
+                <div class="arrow-left"></div>
+                <div class="bg-tablet">
+                    <h2>Цікавий планшет</h2>
+                    <p>Розкрий потенціал свого пристрою разом з нами всього за 250 грн/міс.</p>
+                    <a class="cta" href="#">придбати пристрій</a>
+                    <div class="dots"></div>
+                </div>
             </div>
             <div class="wrapper">
                 <h1>перелік вдалих послуг</h1>

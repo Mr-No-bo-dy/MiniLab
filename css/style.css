@@ -1,6 +1,6 @@
-/* * {
+* {
     margin: 0;
-} */
+}
 
 /* html {
     font-size: 10px;
@@ -35,7 +35,7 @@ a {
     margin: 0 -15px;
 }
 
-.column {
+.column-wide {
     margin: 0 15px;
     width: 270px;
 }
@@ -45,37 +45,65 @@ header li,
     display: inline-block;
 }
 
-/* table {
-    width: 16%;
-} */
+.top-menu>li {
+    padding: 25px;
+}
 
-.flex {
+header {
+    position: relative;
+}
+
+.in-menu-bg {
     display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
 }
 
-.list:hover>.flex {
-    display: flex;
-}
-
-.in-list li {
+.list:hover>.in-menu-bg {
     display: block;
+    z-index: 1;
+}
+
+.in-menu {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.list:hover {
+    background-color: #f2f2f2;
+}
+
+.column-narrow {
+    margin: 0 15px;
+    min-width: 170px;
+}
+
+.column-narrow li {
+    display: block;
+    padding: 10px 0;
+}
+
+.column-narrow li:first-child a {
+    font-weight: 700;
+}
+
+.view-all {
+    padding: 10px;
+    color: #262626;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #e6e6e6;
 }
 
 .tablet {
     position: relative;
-}
-
-.arrow-right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background-color: #131313;
-}
-
-.arrow-right:hover~.bg-tablet {
-    background: url(../img/bg-tablet2.jpg) right top;
 }
 
 .bg-tablet {
@@ -84,6 +112,23 @@ header li,
     box-sizing: border-box;
     background: url(../img/bg-tablet1.jpg) right top;
 }
+
+[type="checkbox"] {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #131313;
+}
+
+.next:checked~.bg-tablet {
+    background: url(../img/bg-tablet2.jpg) right top;
+}
+
+/* .previous:checked~.bg-tablet {
+    background: url(../img/bg-tablet1.jpg) right top;
+} */
 
 .bg-macbook {
     position: relative;

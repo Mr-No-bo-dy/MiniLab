@@ -55,3 +55,7 @@ header li,
     box-sizing: border-box;
     background: url(../img/bg-macbook.jpg) right top;
 }
+
+.social {
+    text-align: center;
+}

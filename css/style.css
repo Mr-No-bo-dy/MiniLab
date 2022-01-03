@@ -27,7 +27,7 @@ a {
 .wrapper-wide {
     margin: 0 auto;
     max-width: 1410px;
-    position: relative;
+    /* position: relative; */
 }
 
 .flex-between {

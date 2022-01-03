@@ -72,7 +72,7 @@ header {
     background-color: #f2f2f2;
 }
 
-.column-narrow {
+/* .column-narrow {
     margin: 0 15px;
     width: 14%;
     max-width: 170px;
@@ -85,7 +85,7 @@ header {
 
 .column-narrow li:first-child a {
     font-weight: 700;
-}
+} */
 
 .view-all {
     padding: 10px;

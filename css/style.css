@@ -27,6 +27,7 @@ a {
 .wrapper-wide {
     margin: 0 auto;
     max-width: 1410px;
+    position: relative;
 }
 
 .flex-between {
@@ -96,6 +97,49 @@ header {
     text-align: center;
     text-transform: uppercase;
     background-color: #e6e6e6;
+}
+
+.show {
+    appearance: none;
+}
+
+.show:checked~.x+label,
+.show:checked~.login {
+    display: block;
+}
+
+.x {
+    appearance: none;
+    position: absolute;
+}
+
+.x+label {
+    display: none;
+    position: absolute;
+    left: calc(50% + 180px);
+    top: 225px;
+    color: #131313;
+    font: 700 1.5rem Arial;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+.x:checked+label,
+.x:checked~.login {
+    display: none;
+}
+
+.login {
+    display: none;
+    content: "";
+    position: absolute;
+    padding: 30px;
+    left: calc(50% - 205px);
+    top: 220px;
+    width: 350px;
+    height: 210px;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .tablet {

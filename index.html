@@ -67,7 +67,9 @@
                 </ul>
                 <ul class="top-menu">
                     <li>
-                        <p>Пошук на сайті</p>
+                        <form action="" method="post">
+                            <input type="search" name="search" placeholder="Пошук на сайті">
+                        </form>
                     </li>
                     <li><a href="#">
                             <picture>
@@ -82,18 +84,18 @@
     </header>
     <main>
         <div class="wrapper">
-            <div class="tablet">
-                <input id="next" class="next" type="checkbox" name="tablet" value="agree">
-                <!-- <label for="next"></label>
-                <input id="previous" class="previous" type="checkbox" name="tablet" value="agree">
-                <label for="previous"></label> -->
+            <form class="tablet" action="" method="post">
+                <input id="previous" class="check previous" type="radio" name="tablet" value="agree" checked>
+                <label for="previous"></label>
+                <input id="next" class="check next" type="radio" name="tablet" value="agree">
+                <label for="next"></label>
                 <div class="bg-tablet">
                     <h2>Цікавий планшет</h2>
                     <p>Розкрий потенціал свого пристрою разом з нами всього за 250 грн/міс.</p>
                     <a class="cta" href="#">придбати пристрій</a>
                     <div class="dots"></div>
                 </div>
-            </div>
+            </form>
             <div class="wrapper">
                 <h1>перелік вдалих послуг</h1>
                 <div class="flex-between">

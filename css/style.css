@@ -110,7 +110,30 @@ header {
 }
 
 .check[type="radio"] {
-    display: none;
+    appearance: none;
+    position: absolute;
+}
+
+.previous[type="radio"]:before,
+.next[type="radio"]:after {
+    content: "";
+    position: absolute;
+    left: 580px;
+    top: 508px;
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.next[type="radio"]:after {
+    left: 595px;
+}
+
+.previous[type="radio"]:checked:before,
+.next[type="radio"]:checked:after {
+    background-color: #fff;
 }
 
 .next:checked~.bg-tablet {

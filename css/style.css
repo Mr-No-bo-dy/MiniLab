@@ -110,17 +110,17 @@ header {
     appearance: none;
 }
 
-.show:checked~.x+label,
+.show:checked~.hide+label,
 .show:checked~.login {
     display: block;
 }
 
-.x {
+.hide {
     appearance: none;
     position: absolute;
 }
 
-.x+label {
+.hide+label {
     display: none;
     position: absolute;
     left: calc(50% + 180px);
@@ -131,8 +131,8 @@ header {
     transform: rotate(45deg);
 }
 
-.x:checked+label,
-.x:checked~.login {
+/* .hide:checked+label, */
+.hide:checked~.login {
     display: none;
 }
 

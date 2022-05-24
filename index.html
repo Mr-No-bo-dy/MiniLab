@@ -26,7 +26,7 @@
                     <li><a href="#">Підтримка</a></li>
                     <li class="list"><a href="#">Додатково</a>
                         <div class="in-menu-bg">
-                            <!-- <div class="in-menu flex-between">
+                            <!-- <nav class="in-menu flex-between">
                                 <ul class="column-narrow">
                                     <li><a href="#">Програмне забезпечення</a></li>
                                     <li><a href="#">Програми для ОС</a></li>
@@ -60,47 +60,47 @@
                                     <li><a href="#">Безкоштовні завантаження</a></li>
                                     <li><a href="#">Освіта</a></li>
                                 </ul>
-                            </div>
-                            <p class="view-all"><a href="#">Переглянути все</a></p> -->
-                            <nav  class="in-menu">
-                                <ul>
-                                    <li><a href="#">Прогрпмне забезпечення</a></li>
-                                    <li><a href="#">Програми для ОС</a></li>
-                                    <li><a href="#">Skype</a></li>
-                                    <li><a href="#">Notepad++</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Комп’ютери та пристрої</a></li>
-                                    <li><a href="#">Планшети </a></li>
-                                    <li><a href="#">Аксесуари та інше</a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Розваги</a></li>
-                                    <li><a href="#">Ігри </a></li>
-                                    <li><a href="#">Ігри для ПК</a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Бізнес</a></li>
-                                    <li><a href="#">Реклама </a></li>
-                                    <li><a href="#">Корпоративні рішення</a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">DevTools & IT</a></li>
-                                    <li><a href="#">Sublime Text 3</a></li>
-                                    <li><a href="#">Розробка програм для Android</a></li>
-                                    <li><a href="#">Документи</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Інше</a></li>
-                                    <li><a href="#">Наш магазин</a></li>
-                                    <li><a href="#">Безкоштовні завантаження</a></li>
-                                    <li><a href="#">Освіта</a></li>
-                                </ul>
-                                <p class="view-all"><a href="#">Переглянути все</a></p>
                             </nav>
+                            <p class="view-all"><a href="#">Переглянути все</a></p> -->
+                            <table class="in-menu">
+                                <thead>
+                                    <tr>
+                                        <th><a href="#">Прогрпмне забезпечення</a></th>
+                                        <th><a href="#">Комп’ютери та пристрої</a></th>
+                                        <th><a href="#">Розваги</a></th>
+                                        <th><a href="#">Бізнес</a></th>
+                                        <th><a href="#">DevTools & IT</a></th>
+                                        <th><a href="#">Інше</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Програми для ОС</a></td>
+                                        <td><a href="#">Планшети </a></td>
+                                        <td><a href="#">Ігри </a></td>
+                                        <td><a href="#">Реклама </a></td>
+                                        <td><a href="#">Sublime Text 3</a></td>
+                                        <td><a href="#">Наш магазин</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Skype</a></td>
+                                        <td><a href="#">Аксесуари та інше</a></td>
+                                        <td><a href="#">Ігри для ПК</a></td>
+                                        <td><a href="#">Корпоративні рішення</a></td>
+                                        <td><a href="#">Розробка програм для Android</a></td>
+                                        <td><a href="#">Безкоштовні завантаження</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Notepad++</a></td>
+                                        <td><a href="#"></a></td>
+                                        <td><a href="#"></a></td>
+                                        <td><a href="#"></a></td>
+                                        <td><a href="#">Документи</a></td>
+                                        <td><a href="#">Освіта</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="view-all"><a href="#">Переглянути все</a></p>
                         </div>
                     </li>
                 </ul>
@@ -141,11 +141,11 @@
                 <div class="bg-tablet">
                     <h2>Цікавий планшет</h2>
                     <p>Розкрий потенціал свого пристрою разом з нами всього за 250 грн/міс.</p>
-                    <a class="cta" href="#">придбати пристрій</a>
+                    <div class="cta"><a href="#">придбати пристрій</a></div>
                     <div class="dots"></div>
                 </div>
             </form>
-            <div class="wrapper">
+            <div class="content">
                 <h1>перелік вдалих послуг</h1>
                 <div class="flex-between">
                     <figure class="column-wide">
@@ -158,7 +158,7 @@
                             <h3>Магазин товарів</h3>
                             <p>Знайдіть технологію, оптимальну для обробки завдань удома, у школі, на роботі та для
                                 розваг.</p>
-                            <p>Перейти та замовити</p>
+                            <p><a class="ttu" href="#">Перейти та замовити</a></p>
                         </figcaption>
                     </figure>
                     <figure class="column-wide">
@@ -170,7 +170,7 @@
                             </picture>
                             <h3>Телефони Huawei</h3>
                             <p>Безкоштовна програма електронної пошти для пристроїв з ОС iOS, Android і Samsung.</p>
-                            <p>Купити крутий телефон через нашу підписку</p>
+                            <p><a class="ttu" href="#">Купити крутий телефон через нашу підписку</a></p>
                         </figcaption>
                     </figure>
                     <figure class="column-wide">
@@ -182,7 +182,7 @@
                             </picture>
                             <h3>Планшет OneTouch</h3>
                             <p>Упорядковуйте свої нотатки та події.</p>
-                            <p>Детальніше про девайс</p>
+                            <p><a class="ttu" href="#">Детальніше про девайс</a></p>
                         </figcaption>
                     </figure>
                     <figure class="column-wide">
@@ -194,26 +194,25 @@
                             </picture>
                             <h3>Адаптивні пристрої</h3>
                             <p>Легко втілюйте свої ідеї в життя в Інтернеті.</p>
-                            <p>Приступити до роботи</p>
+                            <p><a class="ttu" href="#">Приступити до роботи</a></p>
                         </figcaption>
                     </figure>
                 </div>
             </div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper macbook">
             <div class="bg-macbook">
                 <h2>Отримай MacBook безкоштовно</h2>
-                <p>Залишайтеся на зв’язку, використовуючи будь-які пристрої, за допомогою безкоштовної поштової служби.
-                </p>
-                <a class="cta" href="#">придбати пристрій</a>
+                <p>Залишайтеся на зв’язку, використовуючи будь-які пристрої, за допомогою безкоштовної поштової служби.</p>
+                <div class="cta"><a href="#">придбати пристрій</a></div>
             </div>
         </div>
         <div class="social">
             <p>Стежте за нами:</p>
             <p>
-                <a class="ie" href="#">ie</a>
-                <a class="chrome" href="#">chr</a>
-                <a class="opera" href="#">op</a>
+                <a class="ie" href="#"><img src="img/ie.png" alt="IE"></a>
+                <a class="chrome" href="#"><img src="img/chrome.png" alt="Chrome"></a>
+                <a class="opera" href="#"><img src="img/opera.png" alt="Opera"></a>
             </p>
         </div>
     </main>
@@ -292,7 +291,7 @@
                     <li><a href="#">Положення про конфіденціальність</a></li>
                     <li><a href="#">Умови використання</a></li>
                     <li><a href="#">Відомості про рекламу</a></li>
-                    <li><a href="#">&copy; MiniLab 2018.</a></li>
+                    <li><a href="#">&copy; MiniLab 2018.</a></li>
                 </ul>
             </div>
         </div>

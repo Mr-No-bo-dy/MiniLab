@@ -88,6 +88,7 @@ header {
 } */
 
 .view-all {
+    position: relative;
     padding: 10px;
     color: #262626;
     font-family: "Segoe UI";
@@ -97,6 +98,12 @@ header {
     text-align: center;
     text-transform: uppercase;
     background-color: #e6e6e6;
+}
+
+.view-all:after {
+    content: "";
+    position: absolute;
+
 }
 
 .show {
@@ -153,6 +160,23 @@ header {
     background: url(../img/bg-tablet1.jpg) right top;
 }
 
+h2 {
+    max-width: 400px;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+.tablet p {
+    max-width: 400px;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
 .check[type="radio"] {
     appearance: none;
     position: absolute;
@@ -183,7 +207,6 @@ header {
 .next:checked~.bg-tablet {
     background: url(../img/bg-tablet2.jpg) right top;
 }
-
 
 .check+label:before,
 .check+label {
@@ -225,6 +248,44 @@ header {
     transform: rotate(-45deg);
 }
 
+.cta a,
+.content a.ttu {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0067b8;
+    font-family: "Segoe UI";
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.content a.ttu:hover {
+    text-decoration: underline;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 25px;
+    color: #262626;
+    background-color: #fff;
+}
+
+.cta a:hover {
+    color: #fff;
+    background-color: #262626;
+}
+
+h1 {
+    color: #0d0d0d;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .column-wide {
     margin: 0 15px;
     width: 23%;
@@ -237,6 +298,29 @@ header {
     padding: 145px 70px;
     box-sizing: border-box;
     background: url(../img/bg-macbook.jpg) right top;
+}
+
+.bg-macbook p {
+    max-width: 450px;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    line-height: 24px;
+    color: #0d0d0d;
+}
+
+.macbook h2 {
+    max-width: 450px;
+    color: #0d0d0d;
+}
+
+.bg-macbook .cta a {
+    color: #fff;
+    background-color: #0d0d0d;
+}
+
+.bg-macbook .cta a:hover {
+    color: #0d0d0d;
+    background-color: #fff;
 }
 
 .social {

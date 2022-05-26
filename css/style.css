@@ -2,12 +2,12 @@
     margin: 0;
 }
 
-/* html {
+html {
     font-size: 10px;
-} */
+}
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 ul {
@@ -17,6 +17,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .wrapper {
@@ -43,6 +47,13 @@ header li,
 
 .top-menu>li {
     padding: 20px 13px;
+}
+
+.social p,
+.header a {
+    font-size: 1.5rem;
+    line-height: 2.0em;
+    color: #262626;
 }
 
 header {
@@ -72,32 +83,31 @@ header {
     background-color: #f2f2f2;
 }
 
-/* .column-narrow {
-    margin: 0 15px;
-    width: 14%;
-    max-width: 170px;
+.in-menu thead a {
+    line-height: 21px;
+    color: #262626;
 }
 
-.column-narrow li {
-    display: block;
-    padding: 10px 0;
+.in-menu a {
+    line-height: 19px;
+    color: #616161;
 }
-
-.column-narrow li:first-child a {
-    font-weight: 700;
-} */
 
 .view-all {
     position: relative;
     padding: 10px;
     color: #262626;
-    font-family: "Segoe UI";
-    font-size: 14px;
+    font-size: 1.4rem;
     letter-spacing: 1px;
-    line-height: 24px;
+    line-height: 1.71em;
     text-align: center;
     text-transform: uppercase;
     background-color: #e6e6e6;
+}
+
+.view-all a {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .view-all:after {
@@ -149,8 +159,52 @@ header {
     z-index: 1;
 }
 
+h5 {
+    font-size: 2.8rem;
+    color: #0d0d0d;
+    text-align: center;
+}
+
+[type="submit"] {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 1.71em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.copyright a,
+.column-narrow a,
+.login p.forgot {
+    font-size: 1.3px;
+    line-height: 1.46em;
+    color: #616161;
+}
+
+.login a.recover {
+    font-size: 1.3px;
+    line-height: 1.46em;
+    color: #0067b8;
+}
+
 .tablet {
     position: relative;
+}
+
+h3 {
+    max-width: 400px;
+    font-weight: bold;
+    font-size: 4.6rem;
+    line-height: 1.05em;
+    color: #fff;
+}
+
+.tablet p {
+    max-width: 400px;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    color: #fff;
 }
 
 .bg-tablet {
@@ -160,21 +214,8 @@ header {
     background: url(../img/bg-tablet1.jpg) right top;
 }
 
-h2 {
-    max-width: 400px;
-    font-family: "Segoe UI";
-    font-weight: bold;
-    font-size: 46px;
-    line-height: 48px;
-    color: #ffffff;
-}
-
-.tablet p {
-    max-width: 400px;
-    font-family: "Segoe UI";
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffffff;
+.next:checked~.bg-tablet {
+    background: url(../img/bg-tablet2.jpg) right top;
 }
 
 .check[type="radio"] {
@@ -202,10 +243,6 @@ h2 {
 .previous[type="radio"]:checked:before,
 .next[type="radio"]:checked:after {
     background-color: #fff;
-}
-
-.next:checked~.bg-tablet {
-    background: url(../img/bg-tablet2.jpg) right top;
 }
 
 .check+label:before,
@@ -253,9 +290,8 @@ h2 {
     text-transform: uppercase;
     text-decoration: none;
     color: #0067b8;
-    font-family: "Segoe UI";
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 1.3rem;
+    line-height: 1.54em;
     letter-spacing: 1px;
 }
 
@@ -277,10 +313,9 @@ h2 {
 
 h1 {
     color: #0d0d0d;
-    font-family: "Segoe UI";
     font-weight: bold;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 2.2rem;
+    line-height: 1.09em;
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
@@ -290,6 +325,18 @@ h1 {
     margin: 0 15px;
     width: 23%;
     max-width: 270px;
+}
+
+h2 {
+    font-size: 2.0rem;
+    line-height: 1.2em;
+    color: #0d0d0d;
+}
+
+.column-wide p {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    color: #262626;
 }
 
 .bg-macbook {
@@ -302,13 +349,12 @@ h1 {
 
 .bg-macbook p {
     max-width: 450px;
-    font-family: "Segoe UI";
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 1.5em;
     color: #0d0d0d;
 }
 
-.macbook h2 {
+.bg-macbook h3 {
     max-width: 450px;
     color: #0d0d0d;
 }
@@ -325,6 +371,16 @@ h1 {
 
 .social {
     text-align: center;
+}
+
+.column-narrow h4 {
+    font-size: 1.5rem;
+    line-height: 1.6em;
+    color: #616161;
+}
+
+.copyright a {
+    font-size: 1.2rem;
 }
 
 .copyright p {

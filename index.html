@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="wrapper-wide">
             <nav class="flex-between">
                 <ul class="top-menu">
@@ -26,42 +26,6 @@
                     <li><a href="#">Підтримка</a></li>
                     <li class="list"><a href="#">Додатково</a>
                         <div class="in-menu-bg">
-                            <!-- <nav class="in-menu flex-between">
-                                <ul class="column-narrow">
-                                    <li><a href="#">Програмне забезпечення</a></li>
-                                    <li><a href="#">Програми для ОС</a></li>
-                                    <li><a href="#">Skype</a></li>
-                                    <li><a href="#">Notepad++</a></li>
-                                </ul>
-                                <ul class="column-narrow">
-                                    <li><a href="#">Комп’ютери та пристрої</a></li>
-                                    <li><a href="#">Планшети </a></li>
-                                    <li><a href="#">Аксесуари та інше</a></li>
-                                </ul>
-                                <ul class="column-narrow">
-                                    <li><a href="#">Розваги</a></li>
-                                    <li><a href="#">Ігри</a></li>
-                                    <li><a href="#">Ігри для ПК</a></li>
-                                </ul>
-                                <ul class="column-narrow">
-                                    <li><a href="#">Бізнес</a></li>
-                                    <li><a href="#">Реклама</a></li>
-                                    <li><a href="#">Корпоративні рішення</a></li>
-                                </ul>
-                                <ul class="column-narrow">
-                                    <li><a href="#">DevTools & IT</a></li>
-                                    <li><a href="#">Sublime Text 3</a></li>
-                                    <li><a href="#">Розробка програм для Android</a></li>
-                                    <li><a href="#">Документи</a></li>
-                                </ul>
-                                <ul class="column-narrow">
-                                    <li><a href="#">Інше</a></li>
-                                    <li><a href="#">Наш магазин</a></li>
-                                    <li><a href="#">Безкоштовні завантаження</a></li>
-                                    <li><a href="#">Освіта</a></li>
-                                </ul>
-                            </nav>
-                            <p class="view-all"><a href="#">Переглянути все</a></p> -->
                             <table class="in-menu">
                                 <thead>
                                     <tr>
@@ -125,7 +89,7 @@
                         <p><input type="email" name="email" placeholder="Електронна адреса"></p>
                         <p><input type="password" name="password" placeholder="Пароль"></p>
                         <p><input type="submit" value="Продовжити"></p>
-                        <p>Забули пароль? <a href="#">Відновити.</a></p>
+                        <p class="forgot">Забули пароль? <a class="recover" href="#">Відновити.</a></p>
                     </form>
                 </ul>
             </nav>
@@ -139,7 +103,7 @@
                 <input id="next" class="check next" type="radio" name="tablet">
                 <label for="next"></label>
                 <div class="bg-tablet">
-                    <h2>Цікавий планшет</h2>
+                    <h3>Цікавий планшет</h3>
                     <p>Розкрий потенціал свого пристрою разом з нами всього за 250 грн/міс.</p>
                     <div class="cta"><a href="#">придбати пристрій</a></div>
                     <div class="dots"></div>
@@ -155,7 +119,7 @@
                                 <source srcset="img/service1.webp" type="image/webp">
                                 <img src="img/service1.jpg" alt="">
                             </picture>
-                            <h3>Магазин товарів</h3>
+                            <h2>Магазин товарів</h2>
                             <p>Знайдіть технологію, оптимальну для обробки завдань удома, у школі, на роботі та для
                                 розваг.</p>
                             <p><a class="ttu" href="#">Перейти та замовити</a></p>
@@ -168,7 +132,7 @@
                                 <source srcset="img/service2.webp" type="image/webp">
                                 <img src="img/service2.jpg" alt="">
                             </picture>
-                            <h3>Телефони Huawei</h3>
+                            <h2>Телефони Huawei</h2>
                             <p>Безкоштовна програма електронної пошти для пристроїв з ОС iOS, Android і Samsung.</p>
                             <p><a class="ttu" href="#">Купити крутий телефон через нашу підписку</a></p>
                         </figcaption>
@@ -180,7 +144,7 @@
                                 <source srcset="img/service3.webp" type="image/webp">
                                 <img src="img/service3.jpg" alt="">
                             </picture>
-                            <h3>Планшет OneTouch</h3>
+                            <h2>Планшет OneTouch</h2>
                             <p>Упорядковуйте свої нотатки та події.</p>
                             <p><a class="ttu" href="#">Детальніше про девайс</a></p>
                         </figcaption>
@@ -192,7 +156,7 @@
                                 <source srcset="img/service4.webp" type="image/webp">
                                 <img src="img/service4.jpg" alt="">
                             </picture>
-                            <h3>Адаптивні пристрої</h3>
+                            <h2>Адаптивні пристрої</h2>
                             <p>Легко втілюйте свої ідеї в життя в Інтернеті.</p>
                             <p><a class="ttu" href="#">Приступити до роботи</a></p>
                         </figcaption>
@@ -202,7 +166,7 @@
         </div>
         <div class="wrapper macbook">
             <div class="bg-macbook">
-                <h2>Отримай MacBook безкоштовно</h2>
+                <h3>Отримай MacBook безкоштовно</h3>
                 <p>Залишайтеся на зв’язку, використовуючи будь-які пристрої, за допомогою безкоштовної поштової служби.</p>
                 <div class="cta"><a href="#">придбати пристрій</a></div>
             </div>
@@ -285,7 +249,7 @@
         </div>
         <div class="wrapper copyright">
             <div class="flex-between">
-                <p>Вибір мови (Українська)</p>
+                <p><a href="#">Вибір мови (Українська)</a></p>
                 <ul>
                     <li><a href="#">Контактні дані</a></li>
                     <li><a href="#">Положення про конфіденціальність</a></li>

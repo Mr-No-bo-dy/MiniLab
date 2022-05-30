@@ -14,7 +14,7 @@
         <div class="wrapper-wide">
             <nav class="flex-between">
                 <ul class="top-menu">
-                    <li><a href="index.html">
+                    <li class="logo"><a href="index.html">
                             <picture>
                                 <source srcset="img/logo.webp" type="image/webp">
                                 <img src="img/logo.png" alt="logo">
@@ -70,7 +70,7 @@
                 </ul>
                 <ul class="top-menu">
                     <li>
-                        <form action="" method="post">
+                        <form class="search-form" action="" method="post">
                             <input type="search" name="search" placeholder="Пошук на сайті">
                         </form>
                     </li>
@@ -80,14 +80,14 @@
                                 <img src="img/cart.png" alt="logo">
                             </picture>
                         </a></li>
-                    <input id="ooo" class="show" type="radio" name="login">
+                    <input id="ooo" class="show" type="radio" name="log">
                     <label for="ooo">Вхід</label>
-                    <input id="xxx" class="hide" type="radio" name="login">
+                    <input id="xxx" class="hide" type="radio" name="log">
                     <label for="xxx">+</label>
                     <form class="login" action="" method="post">
                         <h5>Вхід</h5>
-                        <p><input type="email" name="email" placeholder="Електронна адреса"></p>
-                        <p><input type="password" name="password" placeholder="Пароль"></p>
+                        <p><input class="enter" type="email" name="email" placeholder="Електронна адреса"></p>
+                        <p><input class="enter" type="password" name="password" placeholder="Пароль"></p>
                         <p><input type="submit" value="Продовжити"></p>
                         <p class="forgot">Забули пароль? <a class="recover" href="#">Відновити.</a></p>
                     </form>
@@ -117,12 +117,12 @@
                             <a href="#"></a>
                             <picture>
                                 <source srcset="img/service1.webp" type="image/webp">
-                                <img src="img/service1.jpg" alt="">
+                                <img src="img/service1.jpg" alt="shop">
                             </picture>
                             <h2>Магазин товарів</h2>
                             <p>Знайдіть технологію, оптимальну для обробки завдань удома, у школі, на роботі та для
                                 розваг.</p>
-                            <p><a class="ttu" href="#">Перейти та замовити</a></p>
+                            <p class="more"><a class="ttu" href="#">Перейти та замовити</a></p>
                         </figcaption>
                     </figure>
                     <figure class="column-wide">
@@ -130,11 +130,11 @@
                             <a href="#"></a>
                             <picture>
                                 <source srcset="img/service2.webp" type="image/webp">
-                                <img src="img/service2.jpg" alt="">
+                                <img src="img/service2.jpg" alt="huawei">
                             </picture>
                             <h2>Телефони Huawei</h2>
                             <p>Безкоштовна програма електронної пошти для пристроїв з ОС iOS, Android і Samsung.</p>
-                            <p><a class="ttu" href="#">Купити крутий телефон через нашу підписку</a></p>
+                            <p class="more"><a class="ttu" href="#">Купити крутий телефон через нашу підписку</a></p>
                         </figcaption>
                     </figure>
                     <figure class="column-wide">
@@ -142,11 +142,11 @@
                             <a href="#"></a>
                             <picture>
                                 <source srcset="img/service3.webp" type="image/webp">
-                                <img src="img/service3.jpg" alt="">
+                                <img src="img/service3.jpg" alt="one_touch">
                             </picture>
                             <h2>Планшет OneTouch</h2>
                             <p>Упорядковуйте свої нотатки та події.</p>
-                            <p><a class="ttu" href="#">Детальніше про девайс</a></p>
+                            <p class="more"><a class="ttu" href="#">Детальніше про девайс</a></p>
                         </figcaption>
                     </figure>
                     <figure class="column-wide">
@@ -154,11 +154,11 @@
                             <a href="#"></a>
                             <picture>
                                 <source srcset="img/service4.webp" type="image/webp">
-                                <img src="img/service4.jpg" alt="">
+                                <img src="img/service4.jpg" alt="adaptive_gadgets">
                             </picture>
                             <h2>Адаптивні пристрої</h2>
                             <p>Легко втілюйте свої ідеї в життя в Інтернеті.</p>
-                            <p><a class="ttu" href="#">Приступити до роботи</a></p>
+                            <p class="more"><a class="ttu" href="#">Приступити до роботи</a></p>
                         </figcaption>
                     </figure>
                 </div>
@@ -167,13 +167,14 @@
         <div class="wrapper macbook">
             <div class="bg-macbook">
                 <h3>Отримай MacBook безкоштовно</h3>
-                <p>Залишайтеся на зв’язку, використовуючи будь-які пристрої, за допомогою безкоштовної поштової служби.</p>
+                <p>Залишайтеся на зв’язку, використовуючи будь-які пристрої, за допомогою безкоштовної поштової служби.
+                </p>
                 <div class="cta"><a href="#">придбати пристрій</a></div>
             </div>
         </div>
         <div class="social">
             <p>Стежте за нами:</p>
-            <p>
+            <p class="browsers">
                 <a class="ie" href="#"><img src="img/ie.png" alt="IE"></a>
                 <a class="chrome" href="#"><img src="img/chrome.png" alt="Chrome"></a>
                 <a class="opera" href="#"><img src="img/opera.png" alt="Opera"></a>
@@ -181,74 +182,62 @@
         </div>
     </main>
     <footer>
-        <div class="wrapper">
+        <div class="wrapper bottom-menu">
             <div class="flex-between">
-                <div class="column-narrow">
+                <nav class="column-narrow">
                     <h4><a href="#">Що нового?</a></h4>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Ліцензійні програми</a></li>
-                            <li><a href="#">Купити ключ</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column-narrow">
+                    <ul>
+                        <li><a href="#">Ліцензійні програми</a></li>
+                        <li><a href="#">Купити ключ</a></li>
+                    </ul>
+                </nav>
+                <nav class="column-narrow">
                     <h4><a href="#">Підтримка 24/7</a></h4>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Обліковий запис</a></li>
-                            <li><a href="#">Лог завантажень</a></li>
-                            <li><a href="#">Повернення</a></li>
-                            <li><a href="#">Відстеження замовлення</a></li>
-                            <li><a href="#">Підтримка</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column-narrow">
+                    <ul>
+                        <li><a href="#">Обліковий запис</a></li>
+                        <li><a href="#">Лог завантажень</a></li>
+                        <li><a href="#">Повернення</a></li>
+                        <li><a href="#">Відстеження замовлення</a></li>
+                        <li><a href="#">Підтримка</a></li>
+                    </ul>
+                </nav>
+                <nav class="column-narrow">
                     <h4><a href="#">Освіта</a></h4>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Навчання</a></li>
-                            <li><a href="#">Студенти</a></li>
-                            <li><a href="#">Для навчальних закладів</a></li>
-                            <li><a href="#">Спеціальні пропозиції для викладачів</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column-narrow">
+                    <ul>
+                        <li><a href="#">Навчання</a></li>
+                        <li><a href="#">Студенти</a></li>
+                        <li><a href="#">Для навчальних закладів</a></li>
+                        <li><a href="#">Спеціальні пропозиції для викладачів</a></li>
+                    </ul>
+                </nav>
+                <nav class="column-narrow">
                     <h4><a href="#">Бізнес</a></h4>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Великий бізнес</a></li>
-                            <li><a href="#">Виробництво</a></li>
-                            <li><a href="#">Фінансові послуги</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column-narrow">
+                    <ul>
+                        <li><a href="#">Великий бізнес</a></li>
+                        <li><a href="#">Виробництво</a></li>
+                        <li><a href="#">Фінансові послуги</a></li>
+                    </ul>
+                </nav>
+                <nav class="column-narrow">
                     <h4><a href="#">Розробка</a></h4>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Центр розробників</a></li>
-                            <li><a href="#">Мережа</a></li>
-                            <li><a href="#">SkyNet</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="column-narrow">
+                    <ul>
+                        <li><a href="#">Центр розробників</a></li>
+                        <li><a href="#">Мережа</a></li>
+                        <li><a href="#">SkyNet</a></li>
+                    </ul>
+                </nav>
+                <nav class="column-narrow">
                     <h4><a href="#">Компанія</a></h4>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Вакансія</a></li>
-                            <li><a href="#">Конфіденційність</a></li>
-                            <li><a href="#">Інвертар</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                    <ul>
+                        <li><a href="#">Вакансія</a></li>
+                        <li><a href="#">Конфіденційність</a></li>
+                        <li><a href="#">Інвертар</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div class="wrapper copyright">
-            <div class="flex-between">
+            <nav class="flex-between">
                 <p><a href="#">Вибір мови (Українська)</a></p>
                 <ul>
                     <li><a href="#">Контактні дані</a></li>
@@ -257,7 +246,7 @@
                     <li><a href="#">Відомості про рекламу</a></li>
                     <li><a href="#">&copy; MiniLab 2018.</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </footer>
 </body>

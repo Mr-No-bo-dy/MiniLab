@@ -23,6 +23,10 @@ a:hover {
     text-decoration: underline;
 }
 
+main {
+    margin: 30px 0 40px;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1170px;
@@ -42,13 +46,27 @@ a:hover {
     /* margin: 0 -15px; */
 }
 
+header {
+    position: relative;
+    /* margin-bottom: 30px; */
+    box-shadow: 0 6px 6px rgba(229, 229, 229, 1);
+}
+
 header li,
 .copyright li {
     display: inline-block;
 }
 
-.top-menu>li {
-    padding: 20px 13px;
+.top-menu:first-child>li {
+    padding: 15px 25px;
+}
+
+.top-menu:first-child>li.logo {
+    padding-right: 35px;
+}
+
+.top-menu:nth-child(2)>li {
+    padding: 10px 13px;
 }
 
 .show+label,
@@ -57,10 +75,6 @@ header li,
     font-size: 1.5rem;
     line-height: 2.0em;
     color: #262626;
-}
-
-header {
-    position: relative;
 }
 
 .in-menu-bg {
@@ -79,20 +93,38 @@ header {
 
 .in-menu {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1170px;
+    width: 100%;
+    padding: 25px 0 45px;
+    border-spacing: 0;
 }
 
 .list:hover {
     background-color: #f2f2f2;
 }
 
+.in-menu th {
+    width: 170px;
+    padding: 15px 0;
+}
+
+.in-menu td {
+    width: 170px;
+    padding: 5px 0;
+}
+
+.in-menu th:not(:last-child),
+.in-menu td:not(:last-child) {
+    padding-right: 30px;
+}
+
 .in-menu thead a {
-    line-height: 21px;
+    line-height: 1.4em;
     color: #262626;
 }
 
 .in-menu a {
-    line-height: 19px;
+    line-height: 1.27em;
     color: #616161;
 }
 
@@ -117,6 +149,18 @@ header {
     content: "";
     position: absolute;
 
+}
+
+.search-form {
+    width: 265px;
+}
+
+.login input,
+.search-form input {
+    padding: 11px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #999;
 }
 
 .show {
@@ -149,6 +193,12 @@ header {
     display: none;
 }
 
+.show:hover+label,
+.hide:hover+label,
+[type="submit"] {
+    cursor: pointer;
+}
+
 .login {
     display: none;
     content: "";
@@ -163,18 +213,20 @@ header {
 }
 
 h5 {
+    margin: 0 0 15px;
     font-size: 2.8rem;
-    color: #0d0d0d;
     font-weight: normal;
+    line-height: 1em;
+    color: #0d0d0d;
 }
 
-[type="submit"] {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    line-height: 1.71em;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
+.login p {
+    margin: 10px 0;
+}
+
+.login .enter:hover,
+.login .enter:focus {
+    border: 1px solid #0067b8;
 }
 
 .copyright a,
@@ -185,10 +237,30 @@ h5 {
     color: #616161;
 }
 
+.login [type="submit"] {
+    padding: 9px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 1.71em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    background-color: #0067b8;
+}
+
+.login [type="submit"]:hover {
+    background-color: #1b4588;
+}
+
 .login a.recover {
     font-size: 1.3px;
     line-height: 1.46em;
     color: #0067b8;
+}
+
+p.forgot {
+    margin: 15px 0 0;
 }
 
 .tablet {
@@ -273,8 +345,8 @@ h3 {
 .check+label:after {
     content: "";
     position: absolute;
-    bottom: 15px;
-    right: 18px;
+    bottom: 17px;
+    right: 20px;
     width: 8px;
     height: 8px;
     border-top: 2px solid #fff;
@@ -286,6 +358,10 @@ h3 {
     bottom: 60px;
     right: 15px;
     transform: rotate(-45deg);
+}
+
+.more {
+    margin: 10px 0;
 }
 
 .cta a,
@@ -315,6 +391,7 @@ h3 {
 }
 
 h1 {
+    margin: 60px 0 40px;
     color: #0d0d0d;
     font-weight: bold;
     font-size: 2.2rem;
@@ -331,6 +408,7 @@ h1 {
 }
 
 h2 {
+    margin: 20px 0 10px;
     font-size: 2.0rem;
     line-height: 1.2em;
     color: #0d0d0d;
@@ -344,6 +422,7 @@ h2 {
 
 .bg-macbook {
     position: relative;
+    margin: 50px 0;
     height: 540px;
     padding: 145px 70px;
     box-sizing: border-box;
@@ -376,10 +455,39 @@ h2 {
     text-align: center;
 }
 
+footer {
+    background-color: #f2f2f2;
+}
+
+.bottom-menu {
+    padding: 30px 0 10px;
+}
+
+.browsers a {
+    display: inline-block;
+    margin: 7px;
+}
+
+.column-narrow {
+    width: 170px;
+}
+
+.column-narrow li {
+    margin: 15px 0;
+}
+
+.column-narrow h4 {
+    margin: 20px 0;
+}
+
 .column-narrow h4 a {
     font-size: 1.5rem;
     line-height: 1.6em;
     color: #616161;
+}
+
+.copyright {
+    padding: 25px 0;
 }
 
 .copyright .flex-between {

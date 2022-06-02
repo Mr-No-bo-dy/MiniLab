@@ -224,9 +224,11 @@ header li,
     display: none;
 }
 
+.browsers div,
 .show:hover+label,
 .hide:hover+label,
-[type="submit"] {
+[type="submit"],
+.language select {
     cursor: pointer;
 }
 
@@ -520,9 +522,40 @@ footer {
     padding: 30px 0 10px;
 }
 
-.browsers a {
+/* .browsers a {
     display: inline-block;
     margin: 7px;
+} */
+
+.browsers div {
+    display: inline-block;
+    margin: 7px;
+    width: 35px;
+    height: 35px;
+}
+
+.ie {
+    background-image: url(../img/ie.png);
+}
+
+.ie:hover {
+    background-image: url(../img/ie-hover.png);
+}
+
+.chrome {
+    background-image: url(../img/chrome.png);
+}
+
+.chrome:hover {
+    background-image: url(../img/chrome-hover.png);
+}
+
+.opera {
+    background-image: url(../img/opera.png);
+}
+
+.opera:hover {
+    background-image: url(../img/opera-hover.png);
 }
 
 .column-narrow {
@@ -562,6 +595,11 @@ footer {
 .copyright form {
     position: relative;
     padding-left: 35px;
+}
+
+.language select {
+    padding: 0 5px;
+    outline: none;
 }
 
 .copyright form:before {

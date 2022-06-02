@@ -19,6 +19,8 @@ a {
     text-decoration: none;
 }
 
+.cart:hover,
+#ooo+label:hover,
 a:hover {
     text-decoration: underline;
 }
@@ -34,7 +36,7 @@ main {
 
 .wrapper-wide {
     margin: 0 auto;
-    max-width: 1420px;
+    max-width: 1400px;
 }
 
 .flex-between {
@@ -113,7 +115,7 @@ header li,
     margin: 0 auto;
     max-width: 1170px;
     width: 100%;
-    padding: 25px 0 45px;
+    padding: 35px 0;
     border-spacing: 0;
 }
 
@@ -121,14 +123,11 @@ header li,
     background-color: #f2f2f2;
 }
 
-.in-menu th {
-    width: 170px;
-    padding: 15px 0;
-}
-
+.in-menu th,
 .in-menu td {
     width: 170px;
     padding: 5px 0;
+    vertical-align: top;
 }
 
 .in-menu th:not(:last-child),
@@ -136,7 +135,8 @@ header li,
     padding-right: 30px;
 }
 
-.in-menu thead a {
+.in-menu thead {
+    font-size: 1.5rem;
     line-height: 1.4em;
     color: #262626;
 }
@@ -185,7 +185,13 @@ header li,
     padding: 11px;
     width: 100%;
     box-sizing: border-box;
+    outline: none;
     border: 1px solid #999;
+}
+
+.search-form input:focus,
+.search-form input:hover {
+    border: 1px solid #000;
 }
 
 .show {
@@ -325,7 +331,7 @@ h3 {
 }
 
 .previous[type="radio"]:before,
-.next[type="radio"]:after {
+.next[type="radio"]:before {
     content: "";
     position: absolute;
     left: 580px;
@@ -337,12 +343,14 @@ h3 {
     border-radius: 50%;
 }
 
-.next[type="radio"]:after {
+.next[type="radio"]:before {
     left: 595px;
 }
 
+.previous[type="radio"]:hover:before,
+.next[type="radio"]:hover:before,
 .previous[type="radio"]:checked:before,
-.next[type="radio"]:checked:after {
+.next[type="radio"]:checked:before {
     background-color: #fff;
 }
 
@@ -364,6 +372,7 @@ h3 {
     bottom: 45px;
 }
 
+.check:hover+label:before,
 .check:checked+label:before {
     background-color: #47443f;
 }
@@ -528,7 +537,7 @@ footer {
     margin: 20px 0;
 }
 
-.column-narrow h4 a {
+.column-narrow h4 {
     font-size: 1.5rem;
     line-height: 1.6em;
     color: #616161;
@@ -550,12 +559,12 @@ footer {
     font-size: 1.2rem;
 }
 
-.copyright p {
+.copyright form {
     position: relative;
     padding-left: 35px;
 }
 
-.copyright p:before {
+.copyright form:before {
     content: "";
     position: absolute;
     top: 3px;

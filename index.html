@@ -29,12 +29,12 @@
                             <table class="in-menu">
                                 <thead>
                                     <tr>
-                                        <th><a href="#">Програмне забезпечення</a></th>
-                                        <th><a href="#">Комп’ютери та пристрої</a></th>
-                                        <th><a href="#">Розваги</a></th>
-                                        <th><a href="#">Бізнес</a></th>
-                                        <th><a href="#">DevTools & IT</a></th>
-                                        <th><a href="#">Інше</a></th>
+                                        <th>Програмне забезпечення</th>
+                                        <th>Комп’ютери та пристрої</th>
+                                        <th>Розваги</th>
+                                        <th>Бізнес</th>
+                                        <th>DevTools & IT</th>
+                                        <th>Інше</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -74,15 +74,19 @@
                             <input type="search" name="search" placeholder="Пошук на сайті">
                         </form>
                     </li>
-                    <li><a href="#">
+                    <li><a class="cart" href="#">Кошик
                             <picture>
                                 <source srcset="img/cart.webp" type="image/webp">
-                                <img src="img/cart.png" alt="logo">
+                                <img src="img/cart.png" alt="cart">
                             </picture>
                         </a>
                     </li>
                     <input id="ooo" class="show" type="radio" name="log">
-                    <label for="ooo">Вхід</label>
+                    <label for="ooo">Вхід <picture>
+                            <source srcset="img/login.webp" type="image/webp">
+                            <img src="img/login.png" alt="login">
+                        </picture>
+                    </label>
                     <input id="xxx" class="hide" type="radio" name="log">
                     <label for="xxx">+</label>
                     <form class="login" action="" method="post">
@@ -190,14 +194,14 @@
         <div class="wrapper bottom-menu">
             <div class="flex-between">
                 <nav class="column-narrow">
-                    <h4><a href="#">Що нового?</a></h4>
+                    <h4>Що нового?</h4>
                     <ul>
                         <li><a href="#">Ліцензійні програми</a></li>
                         <li><a href="#">Купити ключ</a></li>
                     </ul>
                 </nav>
                 <nav class="column-narrow">
-                    <h4><a href="#">Підтримка 24/7</a></h4>
+                    <h4>Підтримка 24/7</h4>
                     <ul>
                         <li><a href="#">Обліковий запис</a></li>
                         <li><a href="#">Лог завантажень</a></li>
@@ -207,7 +211,7 @@
                     </ul>
                 </nav>
                 <nav class="column-narrow">
-                    <h4><a href="#">Освіта</a></h4>
+                    <h4>Освіта</h4>
                     <ul>
                         <li><a href="#">Навчання</a></li>
                         <li><a href="#">Студенти</a></li>
@@ -216,7 +220,7 @@
                     </ul>
                 </nav>
                 <nav class="column-narrow">
-                    <h4><a href="#">Бізнес</a></h4>
+                    <h4>Бізнес</h4>
                     <ul>
                         <li><a href="#">Великий бізнес</a></li>
                         <li><a href="#">Виробництво</a></li>
@@ -224,7 +228,7 @@
                     </ul>
                 </nav>
                 <nav class="column-narrow">
-                    <h4><a href="#">Розробка</a></h4>
+                    <h4>Розробка</h4>
                     <ul>
                         <li><a href="#">Центр розробників</a></li>
                         <li><a href="#">Мережа</a></li>
@@ -232,7 +236,7 @@
                     </ul>
                 </nav>
                 <nav class="column-narrow">
-                    <h4><a href="#">Компанія</a></h4>
+                    <h4>Компанія</h4>
                     <ul>
                         <li><a href="#">Вакансія</a></li>
                         <li><a href="#">Конфіденційність</a></li>
@@ -243,13 +247,24 @@
         </div>
         <div class="wrapper copyright">
             <nav class="flex-between">
-                <p><a href="#">Вибір мови (Українська)</a></p>
+                <!-- <p><a href="#">Вибір мови (Українська)</a></p> -->
+                <form action="" method="post">
+                    <select name="Language">
+                        <option value="Українська">Українська</option>
+                        <option value="English">English</option>
+                        <option value="Eesti">Eesti</option>
+                        <option value="Latviešu">Latviešu</option>
+                        <option value="Lietuvių">Lietuvių</option>
+                        <option value="Français" disabled>Français</option>
+                        <option value="Deutsch" disabled>Deutsch</option>
+                    </select>
+                </form>
                 <ul>
                     <li><a href="#">Контактні дані</a></li>
                     <li><a href="#">Положення про конфіденціальність</a></li>
                     <li><a href="#">Умови використання</a></li>
                     <li><a href="#">Відомості про рекламу</a></li>
-                    <li><a href="#">&copy; MiniLab 2018.</a></li>
+                    <li>&copy; MiniLab 2018.</li>
                 </ul>
             </nav>
         </div>

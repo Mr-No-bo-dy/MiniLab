@@ -29,44 +29,6 @@
                             <table class="in-menu">
                                 <thead>
                                     <tr>
-                                        <td><ul>
-                                            <li><b>Програмне забезпечення</b></li>
-                                            <li><a href="#">Програми для ОС</a></li>
-                                            <li><a href="#">Skype</a></li>
-                                            <li><a href="#">Notepad++</a></li>
-                                        </ul></td>
-                                        <td><ul>
-                                            <li><b>Комп’ютери та пристрої</b></li>
-                                            <li><a href="#">Планшети</a></li>
-                                            <li><a href="#">Аксесуари та інше</a></li>
-                                            <li></li>
-                                        </ul></td>
-                                        <td><ul>
-                                            <li><b>Розваги</b></li>
-                                            <li><a href="#">Ігри</a></li>
-                                            <li><a href="#">Ігри для ПК</a></li>
-                                            <li></li>
-                                        </ul></td>
-                                        <td><ul>
-                                            <li><b>Бізнес</b></li>
-                                            <li><a href="#">Реклама</a></li>
-                                            <li><a href="#">Корпоративні рішення</a></li>
-                                            <li></li>
-                                        </ul></td>
-                                        <td><ul>
-                                            <li><b>DevTools & IT</b></li>
-                                            <li><a href="#">Sublime Text 3</a></li>
-                                            <li><a href="#">Розробка програм для Android</a></li>
-                                            <li><a href="#">Документи</a></li>
-                                        </ul></td>
-                                        <td><ul>
-                                            <li><b>Інше</b></li>
-                                            <li><a href="#">Наш магазин</a></li>
-                                            <li><a href="#">Безкоштовні завантаження</a></li>
-                                            <li><a href="#">Освіта</a></li>
-                                        </ul></td>
-                                    </tr>
-                                    <!-- <tr>
                                         <th>Програмне забезпечення</th>
                                         <th>Комп’ютери та пристрої</th>
                                         <th>Розваги</th>
@@ -77,30 +39,50 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><a href="#">Програми для ОС</a></td>
-                                        <td><a href="#">Планшети </a></td>
-                                        <td><a href="#">Ігри </a></td>
-                                        <td><a href="#">Реклама </a></td>
-                                        <td><a href="#">Sublime Text 3</a></td>
-                                        <td><a href="#">Наш магазин</a></td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Програми для ОС</a></li>
+                                                <li><a href="#">Skype</a></li>
+                                                <li><a href="#">Notepad++</a></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Планшети</a></li>
+                                                <li><a href="#">Аксесуари та інше</a></li>
+                                                <li></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Ігри</a></li>
+                                                <li><a href="#">Ігри для ПК</a></li>
+                                                <li></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Реклама</a></li>
+                                                <li><a href="#">Корпоративні рішення</a></li>
+                                                <li></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Sublime Text 3</a></li>
+                                                <li><a href="#">Розробка програм для Android</a></li>
+                                                <li><a href="#">Документи</a></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#">Наш магазин</a></li>
+                                                <li><a href="#">Безкоштовні завантаження</a></li>
+                                                <li><a href="#">Освіта</a></li>
+                                            </ul>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td><a href="#">Skype</a></td>
-                                        <td><a href="#">Аксесуари та інше</a></td>
-                                        <td><a href="#">Ігри для ПК</a></td>
-                                        <td><a href="#">Корпоративні рішення</a></td>
-                                        <td><a href="#">Розробка програм для Android</a></td>
-                                        <td><a href="#">Безкоштовні завантаження</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">Notepad++</a></td>
-                                        <td><a href="#"></a></td>
-                                        <td><a href="#"></a></td>
-                                        <td><a href="#"></a></td>
-                                        <td><a href="#">Документи</a></td>
-                                        <td><a href="#">Освіта</a></td>
-                                    </tr>
-                                </tbody> -->
+                                </tbody>
                             </table>
                             <p class="view-all"><a href="#">Переглянути все</a></p>
                         </div>
@@ -113,18 +95,14 @@
                         </form>
                     </li>
                     <li><a class="cart" href="#">Кошик
-                            <picture>
+                            <picture class="cart-pic">
                                 <source srcset="img/cart.webp" type="image/webp">
                                 <img src="img/cart.png" alt="cart">
                             </picture>
                         </a>
                     </li>
                     <input id="ooo" class="show" type="radio" name="log">
-                    <label for="ooo">Вхід <picture>
-                            <source srcset="img/login.webp" type="image/webp">
-                            <img src="img/login.png" alt="login">
-                        </picture>
-                    </label>
+                    <label for="ooo">Вхід <span class="show-enter"></span></label>
                     <input id="xxx" class="hide" type="radio" name="log">
                     <label for="xxx">+</label>
                     <form class="login" action="" method="post">
@@ -219,18 +197,13 @@
                 <div class="cta"><a href="#">придбати пристрій</a></div>
             </div>
         </div>
-        <div class="social">
+        <div class="wrapper social">
             <p>Стежте за нами:</p>
             <div class="browsers">
-                <div class="ie"></div>
-                <div class="chrome"></div>
-                <div class="opera"></div>
-            </div>
-            <!-- <p class="browsers">
                 <a class="ie" href="#"><img src="img/ie.png" alt="IE"></a>
                 <a class="chrome" href="#"><img src="img/chrome.png" alt="Chrome"></a>
                 <a class="opera" href="#"><img src="img/opera.png" alt="Opera"></a>
-            </p> -->
+            </div>
         </div>
     </main>
     <footer>

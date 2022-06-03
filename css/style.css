@@ -51,6 +51,7 @@ header {
     box-shadow: 0 3px 6px rgba(229, 229, 229, 1);
 }
 
+.header a,
 .top-menu>li,
 .copyright li {
     display: inline-block;
@@ -66,10 +67,6 @@ header {
 
 .top-menu:nth-child(2)>li {
     padding: 10px 13px;
-}
-
-.header a {
-    display: inline-block;
 }
 
 .header .top-menu li.list>a {
@@ -181,6 +178,11 @@ header {
     width: 265px;
 }
 
+[type="search"] {
+    background: #fff url(../img/search.png) no-repeat right 15px top 11px;
+}
+
+.language select,
 .login input,
 .search-form input {
     padding: 11px;
@@ -190,6 +192,8 @@ header {
     border: 1px solid #999;
 }
 
+.language select:hover,
+.language select:focus,
 .search-form input:focus,
 .search-form input:hover {
     border: 1px solid #000;
@@ -210,7 +214,7 @@ header {
 
 .show-enter {
     display: inline-block;
-    width: 16px;
+    width: 22px;
     height: 16px;
     vertical-align: middle;
     background: url(../img/login.png) no-repeat;
@@ -308,7 +312,7 @@ h5 {
 }
 
 p.forgot {
-    margin: 15px 0 0;
+    margin-top: 15px;
 }
 
 .tablet {
@@ -485,6 +489,10 @@ h2 {
     color: #262626;
 }
 
+.column-wide .aic {
+    min-height: 70px;
+}
+
 .bg-macbook {
     position: relative;
     margin: 50px 0;
@@ -590,8 +598,8 @@ footer {
 }
 
 .language select {
+    color: #262626;
     padding: 0 5px;
-    outline: none;
 }
 
 .copyright form:before {

@@ -37,6 +37,7 @@ main {
 
 .wrapper-wide {
     margin: 0 auto;
+    padding: 0 15px;
     max-width: 1400px;
 }
 
@@ -76,7 +77,7 @@ header {
 
 .hamburger {
     position: relative;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
     width: 30px;
     height: 25px;
 }
@@ -118,11 +119,12 @@ header {
     display: none;
 }
 
-.left-top-menu>li a {
+.left-top-menu>li>a {
     padding: 15px 25px;
 }
+
 .right-top-menu>li {
-    padding: 10px 13px;
+    padding: 10px 5px;
 }
 
 .header .top-menu li.list>a {
@@ -141,6 +143,10 @@ header {
     transform: rotate(135deg);
     transition: all .5s ease;
 }
+
+/* .show+label {
+    padding-right: 15px;
+} */
 
 .show+label,
 .social p,
@@ -230,13 +236,17 @@ header {
     transform: rotate(45deg);
 }
 
-[type="search"] {
+.search-form {
+    width: 140px;
+}
+
+.search-form [type="search"] {
     background: #fff url(../img/search.png) no-repeat right 15px top 11px;
 }
 
 .language select,
 .login input,
-.search-form input {
+[type="search"] {
     padding: 11px;
     width: 100%;
     box-sizing: border-box;
@@ -246,8 +256,8 @@ header {
 
 .language select:hover,
 .language select:focus,
-.search-form input:focus,
-.search-form input:hover {
+[type="search"]:focus,
+[type="search"]:hover {
     border: 1px solid #000;
 }
 
@@ -280,8 +290,8 @@ header {
 .hide+label {
     display: none;
     position: absolute;
-    left: calc(50% + 175px);
-    top: 230px;
+    left: calc(50% + 140px);
+    top: 255px;
     color: #131313;
     font: 700 2.5rem Arial;
     z-index: 2;
@@ -302,6 +312,7 @@ header {
     top: 220px;
     width: 350px;
     height: 210px;
+    transform: scale(.8);
     background-color: #fff;
     z-index: 1;
 }
@@ -528,7 +539,7 @@ h1 {
 }
 
 h2 {
-    margin: 20px 0 10px;
+    margin: 10px 0 10px;
     font-size: 2.0rem;
     line-height: 1.2em;
     color: #0d0d0d;
@@ -668,6 +679,19 @@ footer {
 }
 
 @media screen and (min-width: 491px) {
+    .right-top-menu>li {
+        padding: 10px 15px;
+    }
+
+    .login {
+        transform: scale(1);
+    }
+    
+    .hide+label {
+        left: calc(50% + 175px);
+        top: 230px;
+    }
+    
     .bottom-menu .flex-between {
         justify-content: space-between;
     }
@@ -696,10 +720,18 @@ footer {
     .bg-macbook h3,
     .bg-macbook p {
         transform: scale(1);
-    }    
+    }
+    
+    h2 {
+        margin: 20px 0 10px;
+    }
 }
 
 @media screen and (min-width: 1182px) {
+    .wrapper-wide {
+        padding: 0;
+    }
+    
     .wrapper {
         padding: 0;
     }

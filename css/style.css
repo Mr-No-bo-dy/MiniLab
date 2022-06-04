@@ -19,26 +19,32 @@ a {
     text-decoration: none;
 }
 
-.cart:hover,
-#ooo+label:hover,
-a:hover {
-    text-decoration: underline;
-}
-
-main {
-    margin: 15px 0 50px;
-}
-
-.wrapper {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1170px;
+.hamburger:hover,
+.show:hover+label,
+.hide:hover+label,
+[type="submit"],
+.check,
+.check+label,
+.browsers div,
+.language select {
+    cursor: pointer;
 }
 
 .wrapper-wide {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1400px;
+}
+
+.wrapper-wide>.flex-between {
+    justify-content: center;
+    row-gap: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
 }
 
 .flex-between {
@@ -49,25 +55,9 @@ main {
     row-gap: 20px;
 }
 
-.wrapper-wide>.flex-between {
-    justify-content: center;
-    row-gap: 0;
-}
-
 .content.flex-between,
 .copyright ul.flex-between {
     justify-content: space-around;
-}
-
-.hamburger:hover,
-.show:hover+label,
-.hide:hover+label,
-[type="submit"],
-.check,
-.check+label,
-.browsers div,
-.language select {
-    cursor: pointer;
 }
 
 header {
@@ -113,6 +103,12 @@ header {
 .top-menu>li,
 .copyright li {
     display: inline-block;
+}
+
+.cart:hover,
+#ooo+label:hover,
+a:hover {
+    text-decoration: underline;
 }
 
 .left-top-menu>li:not(:first-child) {
@@ -368,6 +364,10 @@ p.forgot {
     margin-top: 15px;
 }
 
+main {
+    margin: 15px 0 50px;
+}
+
 .advertisement {
     height: 540px;
     padding: 100px 30px;
@@ -485,12 +485,7 @@ h3 {
     line-height: 1.54em;
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-decoration: none;
     color: #0067b8;
-}
-
-.content .more a:hover {
-    text-decoration: underline;
 }
 
 .cta a {
@@ -504,6 +499,7 @@ h3 {
 .cta a:hover {
     color: #fff;
     background-color: #262626;
+    text-decoration: none;
 }
 
 .cta a:after {
@@ -697,13 +693,14 @@ footer {
     }
 }
 
-@media screen and (min-width: 632px) {
+/* @media screen and (min-width: 632px) { */
+@media screen and (min-width: 683px) {
     html {
         font-size: 10px;
     }
     
     .column-wide .aic {
-        min-height: 60px;
+        min-height: 63px;
     }
 
     .wrapper-wide>.flex-between,
@@ -727,7 +724,8 @@ footer {
     }
 }
 
-@media screen and (min-width: 1182px) {
+/* @media screen and (min-width: 1182px) { */
+@media screen and (min-width: 1191px) {
     .wrapper-wide {
         padding: 0;
     }

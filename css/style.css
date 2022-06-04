@@ -86,7 +86,6 @@ header {
 
 .hamburger span:before {
     top: -8px;
-    height: 1px;
 }
 
 .hamburger span:after {
@@ -139,10 +138,6 @@ a:hover {
     transform: rotate(135deg);
     transition: all .5s ease;
 }
-
-/* .show+label {
-    padding-right: 15px;
-} */
 
 .show+label,
 .social p,
@@ -395,25 +390,22 @@ h3 {
 }
 
 .bg-tablet {
-    background: url(../img/bg-tablet1.jpg) no-repeat right top;
+    background: url(../img/bg-tablet1.jpg) no-repeat right top / cover;
 }
 
 .next:checked~.bg-tablet {
-    background: url(../img/bg-tablet2.jpg) no-repeat right top;
+    background: url(../img/bg-tablet2.jpg) no-repeat right top / cover;
 }
 
 .check[type="radio"] {
     appearance: none;
-    /* position: absolute; */
 }
 
 .previous[type="radio"]:before,
 .next[type="radio"]:before {
     content: "";
     position: absolute;
-    /* left: 580px; */
     left: calc(50% - 11px);
-    /* top: 508px; */
     bottom: calc(0% + 20px);
     width: 7px;
     height: 7px;
@@ -423,7 +415,6 @@ h3 {
 }
 
 .next[type="radio"]:before {
-    /* left: 595px; */
     left: calc(50% + 4px);
 }
 
@@ -552,9 +543,8 @@ h2 {
 }
 
 .bg-macbook {
-    /* position: relative; */
     margin: 40px 0;
-    background: url(../img/bg-macbook.jpg) no-repeat right top;
+    background: url(../img/bg-macbook.jpg) no-repeat right top / cover;
 }
 
 .bg-macbook p {
@@ -619,12 +609,8 @@ footer {
 }
 
 .column-narrow {
-    /* box-sizing: border-box;
-    padding: 0 15px;
-    width: 33.3333%; */
     min-width: 130px;
     width: 29%;
-    /* width: 170px; */
 }
 
 .column-narrow li {
@@ -693,7 +679,12 @@ footer {
     }
 }
 
-/* @media screen and (min-width: 632px) { */
+@media screen and (min-width: 599px) {
+    .wrapper-wide>.flex-between {        
+        justify-content: space-between;
+    }
+}
+
 @media screen and (min-width: 683px) {
     html {
         font-size: 10px;
@@ -703,7 +694,6 @@ footer {
         min-height: 63px;
     }
 
-    .wrapper-wide>.flex-between,
     .copyright ul.flex-between {
         justify-content: space-between;
     }
@@ -724,7 +714,6 @@ footer {
     }
 }
 
-/* @media screen and (min-width: 1182px) { */
 @media screen and (min-width: 1191px) {
     .wrapper-wide {
         padding: 0;
@@ -763,10 +752,7 @@ footer {
     }
 
     .column-narrow {
-        /* padding: 0 15px; */
-        /* width: 16.6667%; */
         width: 14.5%;
-        /* width: 170px; */
     }
     
     .left-top-menu>li:not(:first-child) {

@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 body {
@@ -26,7 +26,7 @@ a:hover {
 }
 
 main {
-    margin: 30px 0 50px;
+    margin: 15px 0 50px;
 }
 
 .wrapper {
@@ -48,9 +48,64 @@ main {
     row-gap: 20px;
 }
 
+.wrapper-wide>.flex-between {
+    justify-content: center;
+    row-gap: 0;
+}
+
+.content.flex-between,
+.copyright ul.flex-between {
+    justify-content: space-around;
+}
+
+.hamburger:hover,
+.show:hover+label,
+.hide:hover+label,
+[type="submit"],
+.check,
+.check+label,
+.browsers div,
+.language select {
+    cursor: pointer;
+}
+
 header {
     position: relative;
     box-shadow: 0 3px 6px rgba(229, 229, 229, 1);
+}
+
+.hamburger {
+    position: relative;
+    padding: 15px;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    background-color: #888;
+    border-radius: 2px;
+}
+
+.hamburger span:before {
+    top: -8px;
+    height: 1px;
+}
+
+.hamburger span:after {
+    top: 8px;
+}
+
+.hamburger:hover span,
+.hamburger:hover span:before,
+.hamburger:hover span:after {
+    background-color: #000;
 }
 
 .header a,
@@ -59,19 +114,14 @@ header {
     display: inline-block;
 }
 
-.top-menu:first-child>li:not(:first-child) {
+.left-top-menu>li:not(:first-child) {
     display: none;
 }
 
-.top-menu:first-child>li:not(:first-child)>a {
+.left-top-menu>li a {
     padding: 15px 25px;
 }
-
-.top-menu:first-child>li.logo {
-    padding: 15px 35px 15px 0;
-}
-
-.top-menu:nth-child(2)>li {
+.right-top-menu>li {
     padding: 10px 13px;
 }
 
@@ -180,10 +230,6 @@ header {
     transform: rotate(45deg);
 }
 
-.search-form {
-    width: 265px;
-}
-
 [type="search"] {
     background: #fff url(../img/search.png) no-repeat right 15px top 11px;
 }
@@ -245,16 +291,6 @@ header {
 /* .hide:checked+label, */
 .hide:checked~.login {
     display: none;
-}
-
-.show:hover+label,
-.hide:hover+label,
-[type="submit"],
-.check,
-.check+label,
-.browsers div,
-.language select {
-    cursor: pointer;
 }
 
 .login {
@@ -321,6 +357,12 @@ p.forgot {
     margin-top: 15px;
 }
 
+.advertisement {
+    height: 540px;
+    padding: 100px 30px;
+    box-sizing: border-box;
+}
+
 .tablet {
     position: relative;
 }
@@ -342,27 +384,26 @@ h3 {
 }
 
 .bg-tablet {
-    height: 540px;
-    padding: 160px 70px;
-    box-sizing: border-box;
-    background: url(../img/bg-tablet1.jpg) right top;
+    background: url(../img/bg-tablet1.jpg) no-repeat right top;
 }
 
 .next:checked~.bg-tablet {
-    background: url(../img/bg-tablet2.jpg) right top;
+    background: url(../img/bg-tablet2.jpg) no-repeat right top;
 }
 
 .check[type="radio"] {
     appearance: none;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .previous[type="radio"]:before,
 .next[type="radio"]:before {
     content: "";
     position: absolute;
-    left: 580px;
-    top: 508px;
+    /* left: 580px; */
+    left: calc(50% - 11px);
+    /* top: 508px; */
+    bottom: calc(0% + 20px);
     width: 7px;
     height: 7px;
     background-color: transparent;
@@ -371,7 +412,8 @@ h3 {
 }
 
 .next[type="radio"]:before {
-    left: 595px;
+    /* left: 595px; */
+    left: calc(50% + 4px);
 }
 
 .previous[type="radio"]:hover:before,
@@ -458,12 +500,19 @@ h3 {
     right: 25px;
 }
 
+.bg-tablet h3,
+.bg-tablet p,
+.bg-macbook h3,
+.bg-macbook p {
+    transform: scale(.8);
+}
+
 .bg-tablet .cta a:hover:after {
     border-color: #fff;
 }
 
 h1 {
-    margin: 60px 0 40px;
+    margin: 50px 0 40px;
     color: #0d0d0d;
     font-weight: bold;
     font-size: 2.2rem;
@@ -486,7 +535,7 @@ h2 {
 }
 
 .more {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .column-wide p {
@@ -495,17 +544,10 @@ h2 {
     color: #262626;
 }
 
-.column-wide .aic {
-    min-height: 70px;
-}
-
 .bg-macbook {
-    position: relative;
-    margin: 50px 0;
-    height: 540px;
-    padding: 145px 70px;
-    box-sizing: border-box;
-    background: url(../img/bg-macbook.jpg) right top;
+    /* position: relative; */
+    margin: 40px 0;
+    background: url(../img/bg-macbook.jpg) no-repeat right top;
 }
 
 .bg-macbook p {
@@ -548,7 +590,11 @@ footer {
 }
 
 .wrapper.bottom-menu {
-    padding: 30px 0 10px;
+    padding: 30px 15px 10px;
+}
+
+.bottom-menu .flex-between {
+    justify-content: space-around;
 }
 
 .browsers a {
@@ -557,6 +603,7 @@ footer {
 }
 
 .browsers img {
+    vertical-align: bottom;
     filter: grayscale(50%);
 }
 
@@ -565,7 +612,12 @@ footer {
 }
 
 .column-narrow {
-    width: 170px;
+    /* box-sizing: border-box;
+    padding: 0 15px;
+    width: 33.3333%; */
+    min-width: 130px;
+    width: 29%;
+    /* width: 170px; */
 }
 
 .column-narrow li {
@@ -583,12 +635,12 @@ footer {
 }
 
 .wrapper.copyright {
-    padding: 25px 0;
+    padding: 25px 15px;
 }
 
 .copyright ul.flex-between {
     column-gap: 12px;
-    row-gap: 15px;
+    row-gap: 10px;
 }
 
 .copyright a {
@@ -615,16 +667,79 @@ footer {
     background-image: url(../img/lang.png);
 }
 
+@media screen and (min-width: 491px) {
+    .bottom-menu .flex-between {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 632px) {
+    html {
+        font-size: 10px;
+    }
+    
+    .column-wide .aic {
+        min-height: 60px;
+    }
+
+    .wrapper-wide>.flex-between,
+    .copyright ul.flex-between {
+        justify-content: space-between;
+    }
+
+    .advertisement {
+        padding: 160px 70px;
+    }
+
+    .bg-tablet h3,
+    .bg-tablet p,
+    .bg-macbook h3,
+    .bg-macbook p {
+        transform: scale(1);
+    }    
+}
+
 @media screen and (min-width: 1182px) {
     .wrapper {
         padding: 0;
     }
+    
+    .wrapper.bottom-menu {
+        padding: 30px 0 10px;
+    }
 
-    /* .flex-between {
-        column-gap: 30px;
-    } */
+    .wrapper.copyright {
+        padding: 25px 0;
+    }
 
-    .top-menu:first-child>li:not(:first-child) {
+    .content.flex-between {
+        justify-content: space-between;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .left-top-menu>li:not(:first-child)>a {
+        padding: 15px 25px;
+    }
+    
+    .left-top-menu>li.logo a {
+        padding: 15px 35px 15px 0;
+    }
+    
+    .search-form {
+        width: 265px;
+    }
+
+    .column-narrow {
+        /* padding: 0 15px; */
+        /* width: 16.6667%; */
+        width: 14.5%;
+        /* width: 170px; */
+    }
+    
+    .left-top-menu>li:not(:first-child) {
         display: inline-block;
     }
 }

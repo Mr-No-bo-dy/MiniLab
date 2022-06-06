@@ -15,6 +15,7 @@ ul {
     list-style: none;
 }
 
+.cart:hover,
 a {
     text-decoration: none;
 }
@@ -95,7 +96,7 @@ header {
 .hamburger:hover span,
 .hamburger:hover span:before,
 .hamburger:hover span:after {
-    background-color: #000;
+    background-color: #0067b8;
 }
 
 .header a,
@@ -104,8 +105,6 @@ header {
     display: inline-block;
 }
 
-.cart:hover,
-#ooo+label:hover,
 a:hover {
     text-decoration: underline;
 }
@@ -228,14 +227,31 @@ a:hover {
 }
 
 .search-form {
+    position: relative;
     width: 140px;
 }
 
-.search-form [type="search"] {
-    background: #fff url(../img/search.png) no-repeat right 15px top 11px;
+.search-submit {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 30px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid transparent;
 }
 
-.language select,
+.search-submit:hover img {
+    filter: grayscale(0);
+}
+
+.search-submit img {
+    filter: grayscale(100%);
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
+
 .login input,
 [type="search"] {
     padding: 11px;
@@ -245,11 +261,13 @@ a:hover {
     border: 1px solid #999;
 }
 
-.language select:hover,
-.language select:focus,
 [type="search"]:focus,
-[type="search"]:hover {
-    border: 1px solid #000;
+[type="search"]:hover,
+.login .enter:hover,
+.login .enter:focus,
+.language select:hover,
+.language select:focus {
+    border: 1px solid #0067b8;
 }
 
 .show {
@@ -263,6 +281,11 @@ a:hover {
 
 .cart-pic {
     vertical-align: middle;
+}
+
+.cart:hover,
+#ooo+label:hover {
+    color: #0067b8;
 }
 
 .show-enter {
@@ -287,6 +310,10 @@ a:hover {
     font: 700 2.5rem Arial;
     z-index: 2;
     transform: rotate(45deg);
+}
+
+.hide+label:hover {
+    color: #0067b8;
 }
 
 /* .hide:checked+label, */
@@ -320,11 +347,7 @@ h5 {
     margin: 10px 0;
 }
 
-.login .enter:hover,
-.login .enter:focus {
-    border: 1px solid #0067b8;
-}
-
+.copyright p,
 .copyright a,
 .column-narrow a,
 .login p.forgot {
@@ -646,8 +669,11 @@ footer {
 }
 
 .language select {
-    color: #262626;
     padding: 0 5px;
+    color: #262626;
+    background-color: #f2f2f2;
+    outline: none;
+    border: 1px solid transparent;
 }
 
 .copyright form:before {
@@ -679,13 +705,13 @@ footer {
     }
 }
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 601px) {
     .wrapper-wide>.flex-between {        
         justify-content: space-between;
     }
 }
 
-@media screen and (min-width: 683px) {
+@media screen and (min-width: 691px) {
     html {
         font-size: 10px;
     }

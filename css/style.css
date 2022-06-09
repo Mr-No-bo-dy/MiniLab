@@ -56,11 +56,6 @@ a {
     row-gap: 20px;
 }
 
-.content.flex-between,
-.copyright ul.flex-between {
-    justify-content: space-around;
-}
-
 header {
     position: relative;
     box-shadow: 0 3px 6px rgba(229, 229, 229, 1);
@@ -543,6 +538,12 @@ h1 {
     text-transform: uppercase;
 }
 
+.content.flex-between,
+.bottom-menu .flex-between,
+.copyright .flex-between {
+    justify-content: space-around;
+}
+
 .column-wide {
     width: 23%;
     min-width: 270px;
@@ -557,6 +558,26 @@ h2 {
 
 .more {
     margin: 10px 0;
+}
+
+.more a{
+    position: relative;
+}
+
+.more i {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #0067b8;
+    border-right: 1px solid #0067b8;
+    transform: rotate(45deg);
+}
+
+.more .long i {
+    top: 28px;
 }
 
 .column-wide p {
@@ -611,10 +632,6 @@ footer {
 
 .wrapper.bottom-menu {
     padding: 30px 15px 10px;
-}
-
-.bottom-menu .flex-between {
-    justify-content: space-around;
 }
 
 .browsers a {
@@ -720,10 +737,6 @@ footer {
         min-height: 63px;
     }
 
-    .copyright ul.flex-between {
-        justify-content: space-between;
-    }
-
     .advertisement {
         padding: 160px 70px;
     }
@@ -737,6 +750,12 @@ footer {
     
     h2 {
         margin: 20px 0 10px;
+    }
+}
+
+@media screen and (min-width: 846px) {
+    .copyright .flex-between {
+        justify-content: space-between;
     }
 }
 
